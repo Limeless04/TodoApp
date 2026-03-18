@@ -2,6 +2,36 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ToDoApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- -->
+        <!-- Flip light/dark roles for dark mode -->
+        <item name="colorPrimary">#B0E4CC</item>
+        <item name="colorOnPrimary">#091413</item>
+        <item name="colorPrimaryContainer">#285A48</item>
+        <item name="colorOnPrimaryContainer">#B0E4CC</item>
+
+        <item name="colorSecondary">#B0E4CC</item>
+        <item name="colorOnSecondary">#091413</item>
+        <item name="colorSecondaryContainer">#285A48</item>
+        <item name="colorOnSecondaryContainer">#B0E4CC</item>
+
+        <item name="colorTertiary">#B0E4CC</item>
+        <item name="colorOnTertiary">#091413</item>
+        <item name="colorTertiaryContainer">#285A48</item>
+        <item name="colorOnTertiaryContainer">#B0E4CC</item>
+
+        <item name="colorError">#F2B8B5</item>
+        <item name="colorOnError">#601410</item>
+        <item name="colorErrorContainer">#8C1D18</item>
+        <item name="colorOnErrorContainer">#F9DEDC</item>
+
+        <!-- Dark surfaces use your darkest brand color -->
+        <item name="android:colorBackground">#091413</item>
+        <item name="colorOnBackground">#B0E4CC</item>
+        <item name="colorSurface">#091413</item>
+        <item name="colorOnSurface">#B0E4CC</item>
+        <item name="colorSurfaceVariant">#285A48</item>
+        <item name="colorOnSurfaceVariant">#B0E4CC</item>
+        <item name="colorOutline">#408A71</item>
     </style>
 </resources>

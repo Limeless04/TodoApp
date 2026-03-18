@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Your brand palette -->
+    <color name="md_primary">#408A71</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#B0E4CC</color>
+    <color name="md_on_primary_container">#091413</color>
+
+    <color name="md_secondary">#285A48</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#B0E4CC</color>
+    <color name="md_on_secondary_container">#091413</color>
+
+    <color name="md_tertiary">#285A48</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_tertiary_container">#B0E4CC</color>
+    <color name="md_on_tertiary_container">#091413</color>
+
+    <color name="md_error">#B3261E</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_error_container">#F9DEDC</color>
+    <color name="md_on_error_container">#410E0B</color>
+
+    <!-- Light theme surfaces -->
+    <color name="md_background">#F4FBF7</color>
+    <color name="md_on_background">#091413</color>
+    <color name="md_surface">#F4FBF7</color>
+    <color name="md_on_surface">#091413</color>
+    <color name="md_surface_variant">#D0E8DF</color>
+    <color name="md_on_surface_variant">#285A48</color>
+    <color name="md_outline">#408A71</color>
+
+    <!-- App specific -->
+    <color name="text_primary">#091413</color>
+    <color name="text_secondary">#285A48</color>
     <color name="task_completed">#AAAAAA</color>
 </resources>

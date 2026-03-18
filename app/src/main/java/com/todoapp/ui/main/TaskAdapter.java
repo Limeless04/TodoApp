@@ -1,5 +1,6 @@
 package com.todoapp.ui.main;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,14 +57,20 @@ public class TaskAdapter extends ListAdapter<Task, TaskAdapter.TaskViewHolder> {
 
         // Apply or remove strikethrough + grey based on completion
         if (task.isCompleted) {
+
             holder.checkBox.setTextColor(
                     ContextCompat.getColor(holder.itemView.getContext(), R.color.task_completed)
             );
+            holder.tvCreatedAt.setAlpha(0.4f);
         } else {
-            holder.checkBox.setAlpha(1.0f);
-            holder.checkBox.setTextColor(
-                    ContextCompat.getColor(holder.itemView.getContext(), android.R.color.tab_indicator_text)
+            // Resolve ?attr/colorOnSurface from the current theme at runtime
+            TypedValue typedValue = new TypedValue();
+            holder.itemView.getContext().getTheme().resolveAttribute(
+                    com.google.android.material.R.attr.colorOnSurface, typedValue, true
             );
+            holder.checkBox.setTextColor(typedValue.data);
+
+            holder.tvCreatedAt.setAlpha(1.0f);
         }
 
         holder.checkBox.setOnCheckedChangeListener((btn, isChecked) -> {

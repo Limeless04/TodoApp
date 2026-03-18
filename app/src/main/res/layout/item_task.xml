@@ -16,6 +16,7 @@
         <CheckBox
             android:id="@+id/checkboxTodo"
             android:layout_width="match_parent"
+            android:textColor="?attr/colorOnSurface"
             android:layout_height="wrap_content" />
 
         <TextView
