@@ -1,6 +1,5 @@
 package com.todoapp.ui.main;
 
-import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.todoapp.R;
 import com.todoapp.data.Task;
 
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -91,7 +89,7 @@ public class TaskAdapter extends ListAdapter<Task, TaskAdapter.TaskViewHolder> {
     }
 
     private static final DiffUtil.ItemCallback<Task> DIFF_CALLBACK =
-            new DiffUtil.ItemCallback<Task>() {
+            new DiffUtil.ItemCallback<>() {
                 @Override
                 public boolean areItemsTheSame(@NonNull Task a, @NonNull Task b) {
                     return a.id == b.id;
