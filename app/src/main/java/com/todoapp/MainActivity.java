@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.OnTas
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Observer live data
-        viewModel.getAllTasks().observe(this, tasks -> {
+        viewModel.getFlattenedTasks().observe(this, tasks -> {
             adapter.submitList(tasks);
         });
 

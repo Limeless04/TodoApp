@@ -8,6 +8,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:paddingTop="24dp"
+    android:background="@drawable/header_bottom_rounded"
     android:paddingBottom="8dp">
 
     <LinearLayout
